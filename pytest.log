@@ -1,0 +1,21 @@
+2021-09-21 22:04:05,083 - INFO - api - request POST http://127.0.0.1:5000/api/users body:{'name': 'Gregory', 'job': 'Paediatric nurse'}
+2021-09-21 22:04:05,089 - INFO - api - response 201 POST http://127.0.0.1:5000/api/users body:{"createdAt":"2021-09-21T22:04:05.087101","id":7,"job":"Paediatric nurse","name":"Gregory"}
+
+2021-09-21 22:04:05,133 - INFO - api - request POST http://127.0.0.1:5000/api/users body:{'name': 'Douglas'}
+2021-09-21 22:04:05,136 - INFO - api - response 400 POST http://127.0.0.1:5000/api/users body:{"msg":"Job field is required"}
+
+2021-09-21 22:04:05,181 - INFO - api - request POST http://127.0.0.1:5000/api/users body:{'job': 'Tourism officer'}
+2021-09-21 22:04:05,185 - INFO - api - response 400 POST http://127.0.0.1:5000/api/users body:{"msg":"Name field is required"}
+
+2021-09-21 22:04:05,187 - INFO - api - request POST http://127.0.0.1:5000/api/users
+2021-09-21 22:04:05,190 - INFO - api - response 200 POST http://127.0.0.1:5000/api/users body:{"count":7,"data":[{"createdAt":"2021-09-21T00:02:34.616540","id":1,"job":"qa","name":"John"},{"createdAt":"2021-09-21T00:01:34.616540","id":2,"job":"qa","name":"Mick"},{"createdAt":"2021-09-21T00:00:34.616540","id":3,"job":"qa","name":"Leon"},{"createdAt":"2021-09-21T22:02:04.421674","id":4,"job":"Clinical molecular geneticist","name":"Terry"},{"createdAt":"2021-09-21T22:02:28.307792","id":5,"job":"Rural practice surveyor","name":"Karen"},{"createdAt":"2021-09-21T22:03:06.256787","id":6,"job":"Records manager","name":"Scott"},{"createdAt":"2021-09-21T22:04:05.087101","id":7,"job":"Paediatric nurse","name":"Gregory"}]}
+
+2021-09-21 22:04:05,190 - INFO - api - request POST http://127.0.0.1:5000/api/users/5
+2021-09-21 22:04:05,195 - INFO - api - response 200 POST http://127.0.0.1:5000/api/users/5 body:{"createdAt":"2021-09-21T22:02:28.307792","id":5,"job":"Rural practice surveyor","name":"Karen"}
+
+2021-09-21 22:04:05,196 - INFO - api - request POST http://127.0.0.1:5000/api/users
+2021-09-21 22:04:05,201 - INFO - api - response 200 POST http://127.0.0.1:5000/api/users body:{"count":7,"data":[{"createdAt":"2021-09-21T00:02:34.616540","id":1,"job":"qa","name":"John"},{"createdAt":"2021-09-21T00:01:34.616540","id":2,"job":"qa","name":"Mick"},{"createdAt":"2021-09-21T00:00:34.616540","id":3,"job":"qa","name":"Leon"},{"createdAt":"2021-09-21T22:02:04.421674","id":4,"job":"Clinical molecular geneticist","name":"Terry"},{"createdAt":"2021-09-21T22:02:28.307792","id":5,"job":"Rural practice surveyor","name":"Karen"},{"createdAt":"2021-09-21T22:03:06.256787","id":6,"job":"Records manager","name":"Scott"},{"createdAt":"2021-09-21T22:04:05.087101","id":7,"job":"Paediatric nurse","name":"Gregory"}]}
+
+2021-09-21 22:04:05,201 - INFO - api - request POST http://127.0.0.1:5000/api/users/8
+2021-09-21 22:04:05,206 - INFO - api - response 404 POST http://127.0.0.1:5000/api/users/8 body:{"msg":"User not found"}
+
